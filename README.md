@@ -1,4 +1,4 @@
-Python ZTM Cheatsheet 💻🚀
+Python Cheatsheet 💻🚀
 ===============================
 
 Contents

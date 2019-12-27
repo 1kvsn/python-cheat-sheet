@@ -12,18 +12,18 @@
 
 # ==========================
 
-# print(type(2 + 4)) # int
-# print(type(2.5)) # float
+print(type(2 + 4)) # int
+print(type(2.5)) # float
 
-# print(2 ** 3) # 2 raised 3.
-# print(5 / 4) # 1.25
-# print(5 // 4) # floors the return value
+print(2 ** 3) # 2 raised 3.
+print(5 / 4) # 1.25
+print(5 // 4) # floors the return value
 
 # # Math functions (comes from Math module)
 # print(round(3.9)) # gets rounded to 4
 # print(abs(-20)) # returns absolute value. Means no negative numbers.
 
-# ===========================
+# ========================================================
 
 # Operator Precedence
 # ()
@@ -31,31 +31,31 @@
 # * /
 # + -
 
-# print((5 + 4) * 10 / 2) #45
+print((5 + 4) * 10 / 2) #45
 
-# print(((5 + 4) * 10) / 2) #45
+print(((5 + 4) * 10) / 2) #45
 
-# print((5 + 4) * (10 / 2)) #45
+print((5 + 4) * (10 / 2)) #45
 
-# print(5 + (4 * 10) / 2) #25
+print(5 + (4 * 10) / 2) #25
 
-# print(5 + 4 * 10 // 2) #25
+print(5 + 4 * 10 // 2) #25
 
 # bin returns binary representation of a number.
 
-# print(bin(450))
-# print(int('0b111000010', 2)) # converts binary into integer with base 2
+print(bin(450))
+print(int('0b111000010', 2)) # converts binary into integer with base 2
 
-# =============================
+# ===========================================================
 
 # rapid assignment of values to variable.
-# a, b, c = 1, 2, 3
+a, b, c = 1, 2, 3
 
-# print(a)
-# print(b)
-# print(c)
+print(a)
+print(b)
+print(c)
 
-# ===========================
+# ===========================================================
 
 # Expression Vs Statement
 
@@ -66,7 +66,7 @@ user_age = iq / 5  # is another statement
 
 # However, the whole line user_age = iq / 5 is called a statement as the result of the calculation is being saved into a variable.
 
-# ==============================
+# ==============================================================
 
 # Strings
 
@@ -76,89 +76,93 @@ THIS IS FUN
 THIS IS ALSO FUN
 """
 
-# print(full_name);
+print(full_name);
 
-# ==============================
+# ===============================================================
 
 # Type Conversion
 
 # convert into string
-# print(str(100))
+print(str(100))
+
+# ================================================================
 
 # Formatted Strings
 
 name = 'Sasikant'
-# print(f'hi {name}')
+print(f'hi {name}')
 
 # using .format() after string
 
-# print('hey {}'.format('Sasikant Nair'))
-# print('hey {}'.format(name))
+print('hey {}'.format('Sasikant Nair'))
+print('hey {}'.format(name))
 
 # change name inside .format and then print new name using variable inside {}
 
-# print('hi {new_name}'.format(new_name='Sri Sri'))
+print('hi {new_name}'.format(new_name='Sri Sri'))
 
+# ===================================================================
 
 # String Manipulation
 
 selfish = 'sasikant'
 
 # reverse a string
+
 # [start:stop:stepover]
-# print(selfish[::-2])
+print(selfish[::-2])
 
-# userName = input('Enter User Name ')
-# password = input('Enter Password ')
-# length = len(password)
+userName = input('Enter User Name ')
+password = input('Enter Password ')
+length = len(password)
 
-# hashed = '*' * length
+hashed = '*' * length
 
-# print(f'hey {userName}, your password {hashed} is {length} letters long!!')
+print(f'hey {userName}, your password {hashed} is {length} letters long!!')
 
 # Conditional Logic
 isOld = 'yes'
 isWhite = False
 
-# if isOld and isWhite:
-#   print('this is good and true to soul !')
-# else:
-#   print('this is all fake')
+if isOld and isWhite:
+  print('this is good and true to soul !')
+else:
+  print('this is all fake')
 
 # Ternary operator
-# print('Hello there') if isWhite else print('is not white')
+print('Hello there') if isWhite else print('is not white')
 
 
-# if isOld and isWhite:
-#   print('either one is true')
-# elif isOld:
-#   print('this is elif printed..')
+if isOld and isWhite:
+  print('either one is true')
+elif isOld:
+  print('this is elif printed..')
 
 
 isExpert = False
 isMagician = True
 
-# if isMagician and not isExpert:
-#   print('you are a magician but not an expert yet!')
+if isMagician and not isExpert:
+  print('you are a magician but not an expert yet!')
 
-# print(True == 1) # True
-# print('' == 1) # False
-# print([] == 1) # False
-# print(10 == 10.0) # True
-# print([] == []) # True
+print(True == 1) # True
+print('' == 1) # False
+print([] == 1) # False
+print(10 == 10.0) # True
+print([] == []) # True
 
-# ===============================
+# ==============================================================
 
 # For Loops
 
-# for teddybears in 'Zero To Mastery':
-#   print(teddybears);
+for teddybears in 'Zero To Mastery':
+  print(teddybears);
 
 # here 'Zero To Mastery' is 'ITERABLE
 
-# for item in (1, 2, 3, 4, 5):
-#   for x in ['a', 'b', 'c']:
-#     print(item, x)
+for item in (1, 2, 3, 4, 5):
+  for x in ['a', 'b', 'c']:
+    print(item, x)
 
 # ITERABLE means a collection or an object which can be iterated over.
 
@@ -172,68 +176,68 @@ user = {
     'can_swim': False
 }
 
-# gets keys in Dict
-# for item in user:
-#   print(item)
+gets keys in Dict
+for item in user:
+  print(item)
 
-# for item in user.keys():
-#   print(item)
+for item in user.keys():
+  print(item)
 
 
 # gets both keys and values in a form of a TUPLE
-# for item in user.items():
-#   print(item)
+for item in user.items():
+  print(item)
 
-# for item in user.items():
-#   key, value = item
-#   print(key, value)
+for item in user.items():
+  key, value = item
+  print(key, value)
 
 # OR
 
-# for key, value in user.items():
-#   print(key, value)
+for key, value in user.items():
+  print(key, value)
 
 
-# for item in user.values():
-#   print(item)
+for item in user.values():
+  print(item)
 
-# ==================================
+# ======================================================
 
-# myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+myList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# result = 0
-# for item in myList:
-#   result += item
-# print('The total sum is:', result)
+result = 0
+for item in myList:
+  result += item
+print('The total sum is:', result)
 
-# ====================================
+# ========================================================
 
 # When we don't need the variable, we can use the underscore and access the iterated item
 
 # (start -> stop -> stepover)
 # stepover default = 1
 
-# for _ in range(0, 10, 2):
-#   print(_)
+for _ in range(0, 10, 2):
+  print(_)
 
 # reverse range
-# for _ in range(10, 0, -1):
-#   print(_)
+for _ in range(10, 0, -1):
+  print(_)
 
-# ================================
+# =========================================================
 
 # Create a List using range()
 
-# for _ in range(2):
-#   print(list(range(10)))
+for _ in range(2):
+  print(list(range(10)))
 
-# ================================
+# =========================================================
 
 # ENUMERATE
 
 # get index and item of enumerated object
-# for i, char in enumerate('Hello'):
-#   print(i, char)
+for i, char in enumerate('Hello'):
+  print(i, char)
 
 # enumerate() takes => strings, lists, tuple.
 
@@ -241,58 +245,58 @@ user = {
 
 # get index of number 55 in range(100)
 
-# for i, char in enumerate(list(range(100))):
-#   if char == 55:
-#     print('the index of 55 is:', i)
+for i, char in enumerate(list(range(100))):
+  if char == 55:
+    print('the index of 55 is:', i)
 
-# ===================================
+# ===================================================================
 
 # WHILE LOOPS
 
-# i = 0
-# while i < 10:
-#   print(i)
-#   i += 1
-# break
+i = 0
+while i < 10:
+  print(i)
+  i += 1
+break
 # we can also have an else condition which runs only when there is NO BREAK. BREAK causes the complete WHILE ELSE BLOCK TO BE SKIPPED...
-# else:
-#   print('done with while loop')
+else:
+  print('done with while loop')
 
-# =================================
+# ==================================================================
 
 # Exercise!
 # Display the image below to the right hand side where the 0 is going to be ' ', and the 1 is going to be '*'. This will reveal an image!
-# picture = [
-#   [0,0,0,1,0,0,0],
-#   [0,0,1,1,1,0,0],
-#   [0,1,1,1,1,1,0],
-#   [1,1,1,1,1,1,1],
-#   [0,0,0,1,0,0,0],
-#   [0,0,0,1,0,0,0]
-# ]
+picture = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0]
+]
 
-# for row in picture:
-#   for pixel in row:
-#     if pixel:
-#       print("*", end="")
-#     else:
-#       print(" ", end="")
-#   print('')
+for row in picture:
+  for pixel in row:
+    if pixel:
+      print("*", end="")
+    else:
+      print(" ", end="")
+  print('')
 
-# ====================================
+# ==========================================================
 
 # EXERCISE
 # Check for duplicates in the list:
 some_list = ['a', 'b', 'b', 'c', 'm', 'n', 'm']
 
-# duplicates = []
-# for item in some_list:
-#   if some_list.count(item) > 1 and not item in duplicates:
-#     duplicates.append(item)
+duplicates = []
+for item in some_list:
+  if some_list.count(item) > 1 and not item in duplicates:
+    duplicates.append(item)
 
-# print(duplicates)
+print(duplicates)
 
-# =========================
+# ===============================================================
 
 # Functions
 
@@ -322,10 +326,9 @@ def checkDriverAge(age=0):
 # it returns "Powering On. Enjoy the ride!"
 # also make it so that the default age is set to 0 if no argument is given.
 
-# ===============================
+# ===============================================================
 
 # DOC STRINGS: used to document the function
-
 
 def test(a):
     '''
@@ -337,16 +340,15 @@ def test(a):
 
 # print(test.__doc__)
 
-# ================================
+# ===================================================================
 
 # *args **kwargs
-
 
 def superFunc(*args):
     print(*args)  # returns a tuple when * is removed
     return sum(args)
 
-# print(superFunc(1,2,3,4,5))
+print(superFunc(1,2,3,4,5))
 
 
 def anotherSuperFunc(*args, **kwargs):
@@ -356,12 +358,11 @@ def anotherSuperFunc(*args, **kwargs):
         total += items
     return sum(args) + total
 
-# print(anotherSuperFunc(1,2,3,4,5, num1=5, num2=10))
+print(anotherSuperFunc(1,2,3,4,5, num1=5, num2=10))
 
 # Rule: params, *args, default params, **kwargs
 
-# =================================
-
+# ================================================================
 
 def highestEven(li):
     result = 0
@@ -371,9 +372,9 @@ def highestEven(li):
     return result
 
 
-# print(highestEven([10, 2, 3, 4, 6, 11, 13, 22, 43]))
+print(highestEven([10, 2, 3, 4, 6, 11, 13, 22, 43]))
 
-# ========================================
+# ===============================================================
 
 # global keyword can be used inside a function to give it access to the global variable without declaring a new variable for reassignment within the function
 
@@ -381,27 +382,49 @@ def highestEven(li):
 
 total = 0
 
-
 def count(total):
     total += 1
     return total
 
-# print(count(count(count(0))));
+print(count(count(count(0))));
 
-# =====================================
+# ==============================================================
 
 # nonlocal
 
-# def outer():
-#   x = "local"
-#   def inner():
-#     nonlocal x
-#     x = 'nonlocal'
-#     print('inner:', x)
+def outer():
+  x = "local"
+  def inner():
+    nonlocal x
+    x = 'nonlocal'
+    print('inner:', x)
 
-#   inner()
-#   print('outer:', x)
+  inner()
+  print('outer:', x)
 
-# outer()
+outer()
 
-# ====================================
+# ================================================================
+
+# Reverse a string and ignore anything other than alphabets.
+
+
+def reverse_letter(string):
+    alphabets = 'abcdefghijklmnopqrstuvwxyz'
+    temp = ''
+
+    for letter in string:
+        if letter in alphabets:
+            temp += letter
+            # print(temp)
+
+    reversedTemp = temp[len(temp)::-1]
+    return print(reversedTemp)
+
+
+reverse_letter("krishan")
+reverse_letter("ultr53o?n")
+reverse_letter("ab23c")
+reverse_letter("krish21an")
+
+# ================================================================
