@@ -4,7 +4,7 @@ class PlayerCharacter:
     # Class Object Attribute
     # This is a static attribute which remains true always
     membership = True
-    constructor function
+    # constructor function
 
     def __init__(self, name, age):
         # access membership using self or PlayerCharacter.membership
