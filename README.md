@@ -1,4 +1,4 @@
-Python Cheatsheet 💻🚀
+Python3 Cheatsheet 💻🚀
 ===============================
 
 Contents
@@ -1027,4 +1027,4 @@ import re
 
 Credits
 ------
-Inspired by: https://github.com/gto76/python-cheatsheet
+Andrei Neagoie's Udemy Course: https://www.udemy.com/course/complete-python-developer-zero-to-mastery/
