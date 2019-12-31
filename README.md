@@ -83,11 +83,12 @@ name[0:10:2]# Ade e
 ```python
 # Basic Functions
 len('turtle') # 6
+list('12345') # ['5', '4', '3', '2', '1']
 
 # Basic Methods
 '  I am alone '.strip()               # 'I am alone' --> Strips all whitespace characters from both ends.
 'On an island'.strip('d')             # 'On an islan' --> # Strips all passed characters from both ends.
-'but life is good!'.split()           # ['but', 'life', 'is', 'good!']
+'but life is good!'.split()           # ['but', 'life', 'is', 'good!'] # default is split by white space
 'Help me'.replace('me', 'you')        # 'Help you' --> Replaces first with second param
 'Need to make fire'.startswith('Need')# True
 'and cook rice'.endswith('rice')      # True
@@ -145,7 +146,7 @@ my_list[1:]                # [2, '3', True]
 my_list[:1]                # [1]
 my_list[-1]                # True
 my_list[::1]               # [1, 2, '3', True]
-my_list[::-1]              # [True, '3', 2, 1]
+my_list[::-1]              # [True, '3', 2, 1] # REVERSES
 my_list[0:3:2]             # [1, '3']
 
 # : is called slicing and has the format [ start : end : step ]
